@@ -32,7 +32,7 @@ This project represents the implementation of the data plane part of a router, m
 		- Time exceeded (type 11, code 0)
 - Incremental checksum update
 	The only reason why the router has to recalculate the checksum is the decrement of the TTL field: thus, for a small change there is an overhead that we would like to avoid. 
-	RFC 1624 [5] describes a method to quickly update the IPv4 checksum without recalculating it from scratch.
+	RFC 1624 describes a method to quickly update the IPv4 checksum without recalculating it from scratch.
 
 ## Testing 
 Mininet is used to simulate a network with the following topology:
